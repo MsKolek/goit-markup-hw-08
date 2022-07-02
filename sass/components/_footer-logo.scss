@@ -1,0 +1,26 @@
+.footer-logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+
+        &__web {
+            font-family: "Raleway";
+            color: var(--transition-color);
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            margin-right: -5px;
+        }
+    
+        &__studio {
+            font-family: "Raleway";
+            text-decoration: none;
+            color: var(--light-text-color);
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+        }
+}
+

@@ -1,0 +1,17 @@
+.section-lorem {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-lorem {
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-lorem {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

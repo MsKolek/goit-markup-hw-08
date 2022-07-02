@@ -1,0 +1,13 @@
+.section-header {
+    font-family: var(--main-font);
+    color: var(--headers-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section-header--margin {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,13 @@
+:root {
+    --headers-color: #212121;
+    --text-color: #757575;
+    --light-text-color: #ffff;
+    --transition-color: #2196f3;
+    --background-color: #ffffff;
+    --section-background-color: #2f303a;
+    --main-font: "Roboto", "Raleway", sans-serif;
+}
+
+.body {
+    background-color: var(--background-color);
+}

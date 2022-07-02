@@ -1,0 +1,33 @@
+.footer-address {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding-bottom: 9px;
+
+        &__mail,
+        &__tel {
+            font-family: var(--main-font);
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.footer-address__mail--padding {
+    padding-bottom: 9px;
+}
+
+.footer-address__mail--portfolio {
+    padding-bottom: 9px;
+    text-decoration: underline;
+}
+
+.footer-address__tel--padding {
+    padding-bottom: 60px;
+}
