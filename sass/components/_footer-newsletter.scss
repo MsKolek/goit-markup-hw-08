@@ -70,3 +70,21 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    &__mail {
+      width: 450px;
+      margin-left: 152px;
+      margin-right: 166px;
+    }
+    &__btn {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

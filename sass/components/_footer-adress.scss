@@ -25,7 +25,6 @@
 
 .footer-address__mail--portfolio {
   padding-bottom: 9px;
-  text-decoration: underline;
 }
 
 .footer-address__tel--padding {
@@ -41,5 +40,21 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-address {
+    text-align: center;
+
+    &__mail,
+    &__tel {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address__mail--portfolio {
+    text-decoration: underline;
   }
 }
