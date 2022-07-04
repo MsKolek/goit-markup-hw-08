@@ -391,21 +391,51 @@
   font-family: var(--main-font);
   color: var(--headers-color);
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.section-header--margin {
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .section-header {
+    font-size: 28px;
+  }
+  .section-header--margin {
+    margin-bottom: 30px;
+  }
 }
-
-.section-profession {
-  padding-top: 0;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-header {
+    font-size: 28px;
+  }
+  .section-header--margin {
+    margin-bottom: 30px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .section-header {
+    font-size: 36px;
+  }
+  .section-header--margin {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-profession {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-profession {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-profession {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
 .profession-images {
   display: flex;
   padding: 0;
@@ -440,17 +470,20 @@
 
 .section-team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .team-photos {
-  display: flex;
-  justify-content: space-between;
   padding: 0;
   list-style: none;
 }
-
 .team-photos__item {
   display: flex;
   flex-direction: column;
@@ -458,15 +491,13 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team-photos__description {
   flex-grow: 1;
   margin: 0;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
-
 .team-photos__title {
   font-family: var(--main-font);
   color: var(--headers-color);
@@ -478,7 +509,6 @@
   text-align: center;
   margin: 0;
 }
-
 .team-photos__workplace {
   font-family: var(--main-font);
   display: block;
@@ -491,8 +521,34 @@
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-photos {
+    display: block;
+  }
+  .team-photos__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-photos__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-photos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-photos__description {
+    padding-bottom: 30px;
+  }
+}
 .members-socials {
-  padding: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -522,14 +578,43 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .members-socials {
+    padding: 0 122px;
+  }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .members-socials {
+    padding: 0 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .members-socials {
+    padding: 0 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .clients-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   list-style: none;
@@ -556,6 +641,23 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .clients-list__item {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list__item {
+    width: 226px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: 170px;
+  }
+}
 .footer {
   background-color: #2f303a;
 }
@@ -576,6 +678,22 @@
   padding-left: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-elements {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-join {
+    padding: 0;
+  }
+
+  .footer-newsletter {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+}
 .footer-logo {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -599,6 +717,11 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    text-align: center;
+  }
+}
 .footer-address {
   font-family: var(--main-font);
   font-style: normal;
@@ -610,7 +733,7 @@
 }
 .footer-address__mail, .footer-address__tel {
   font-family: var(--main-font);
-  display: block;
+  display: flex;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
@@ -631,6 +754,15 @@
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-address {
+    text-align: center;
+  }
+  .footer-address__mail, .footer-address__tel {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .footer-section-header {
   font-family: var(--main-font);
   text-transform: uppercase;
@@ -641,6 +773,12 @@
   color: var(--light-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-section-header {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer-socials {
   display: flex;
   justify-content: space-between;
@@ -720,6 +858,24 @@
   margin-left: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .newsletter-form__mail {
+    width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .newsletter-form__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
 .btn-section {
   padding-top: 94px;
   padding-bottom: 94px;

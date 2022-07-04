@@ -15,3 +15,17 @@
   padding-top: 72px;
   padding-left: 70px;
 }
+@media screen and (max-width: 767px) {
+  .footer-elements {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-join {
+    padding: 0;
+  }
+  .footer-newsletter {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+}
