@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 8px;
+  }
+  .hamburger__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover .hamburger__icon,
+    &:focus .hamburger__icon {
+      fill: var(--transition-color);
+    }
+  }
+  .hamburger__icon {
+    fill: var(--headers-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+}
