@@ -1017,10 +1017,7 @@
   }
 }
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -1091,6 +1088,25 @@
   color: #757575;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
