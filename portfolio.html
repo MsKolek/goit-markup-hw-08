@@ -24,7 +24,13 @@
         </div>
         <!-- Logo na stronie 
         Koniec-->
-
+        <div class="hamburger">
+          <button class="hamburger__button" type="button" js-menu-open>
+            <svg class="hamburger__icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
         <!-- Lista nawigacyjna -->
 
         <nav>
@@ -456,5 +462,51 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop backdrop--hidden" js-menu>
+      <div class="mobile-menu">
+        <button
+          type="button"
+          class="menu-closing-button menu-closing-button--modal"
+          js-menu-close
+        >
+          <svg class="menu-closing-button__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-hamburger"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-navigation">
+            <li class="mobile-navigation__list">
+              <a class="mobile-navigation__link" href="/index.html">Agencja</a>
+            </li>
+            <li class="mobile-navigation__list">
+              <a class="mobile-navigation__link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-navigation__list">
+              <a class="mobile-navigation__link" href="/kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-contact-links">
+          <a class="mobile-contact-links__tel" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+          <a class="mobile-contact-links__mail" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+        </div>
+        <div class="social-media-mobile-menu">
+          <a class="social-media-mobile-menu__link" href="">Instagram</a>
+          <div class="social-media-mobile-menu__line"></div>
+          <a class="social-media-mobile-menu__link" href="">Twitter</a>
+          <div class="social-media-mobile-menu__line"></div>
+          <a class="social-media-mobile-menu__link" href="">Facebook</a>
+          <div class="social-media-mobile-menu__line"></div>
+          <a class="social-media-mobile-menu__link" href="">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
