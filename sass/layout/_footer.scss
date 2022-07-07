@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 767px) {
   .footer-elements {
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,7 @@
   .footer-join {
     padding: 0;
     margin-left: 122px;
+    margin-bottom: 40px;
   }
   .footer-newsletter {
     padding: 0;
