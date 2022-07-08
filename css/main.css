@@ -226,6 +226,7 @@
   padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -747,7 +748,6 @@
 }
 .footer-logo {
   padding-top: 60px;
-  padding-bottom: 20px;
 }
 .footer-logo__web {
   font-family: "Raleway";
@@ -786,6 +786,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-bottom: 9px;
+  margin-top: 20px;
 }
 .footer-address__mail, .footer-address__tel {
   font-family: var(--main-font);
@@ -956,16 +957,16 @@
   .newsletter-form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
   .newsletter-form__mail {
-    width: 450px;
-    margin-left: 152px;
-    margin-right: 166px;
+    min-width: 450px;
+    margin-bottom: 20px;
   }
   .newsletter-form__btn {
-    margin-top: 20px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -74,16 +74,16 @@
   .newsletter-form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 60px;
 
     &__mail {
-      width: 450px;
-      margin-left: 152px;
-      margin-right: 166px;
+      min-width: 450px;
+      margin-bottom: 20px;
     }
     &__btn {
-      margin-top: 20px;
+      margin: auto;
     }
   }
 }
