@@ -182,7 +182,8 @@
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     min-height: 609px;
   }
   .modal-title {
@@ -192,10 +193,12 @@
     padding-right: 40px;
   }
   .form-modal__input {
-    width: 370px;
+    width: 90%;
+    max-width: 370px;
   }
   .form-modal__textarea {
-    width: 370px;
+    width: 90%;
+    max-width: 370px;
   }
   .form-modal__checkbox {
     margin-left: 40px;

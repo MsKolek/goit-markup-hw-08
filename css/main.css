@@ -675,6 +675,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .clients-list {
+    justify-content: center;
+  }
+
   .clients-list__item {
     width: 210px;
     margin-bottom: 30px;
@@ -1345,7 +1349,8 @@
 
 @media screen and (max-width: 767px) {
   .modal {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     min-height: 609px;
   }
 
@@ -1357,11 +1362,13 @@
   }
 
   .form-modal__input {
-    width: 370px;
+    width: 90%;
+    max-width: 370px;
   }
 
   .form-modal__textarea {
-    width: 370px;
+    width: 90%;
+    max-width: 370px;
   }
 
   .form-modal__checkbox {

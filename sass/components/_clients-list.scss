@@ -34,6 +34,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .clients-list {
+    justify-content: center;
+  }
   .clients-list__item {
     width: 210px;
     margin-bottom: 30px;
